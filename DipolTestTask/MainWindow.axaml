@@ -2,13 +2,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450"
         x:Class="DipolTestTask.MainWindow"
         Title="DipolTestTask">
 
-    <StackPanel Margin="20">
-        <TextBlock Text="Welcome to Avalonia!" FontSize="24" Margin="0,0,0,20"/>
-        <TextBox Name="MyTextBox" Watermark="Enter text here..." Width="400" Height="30"/>
-        <Button Name="MyButton" Content="Click Me" Width="100" Height="40" Margin="0,20,0,0" />
+    <StackPanel Margin="20" VerticalAlignment="Center">
+        <TextBlock x:Name="MyHeader" Text="Avalonia app" Width="150" HorizontalAlignment="Center" Margin="0,0,0,20" />
+        <TextBox x:Name="MyTextBox" Watermark="Введите текст" Width="150" HorizontalAlignment="Center"
+                 Margin="0,0,0,20" />
+        <Button x:Name="MyButton" Content="Установить цвет" Width="150" Margin="0,0,0,20" HorizontalAlignment="Center" />
+        <TextBlock x:Name="ErrorTextBlock" Foreground="Red" HorizontalAlignment="Center" Margin="0,0,0,0" />
     </StackPanel>
 </Window>
